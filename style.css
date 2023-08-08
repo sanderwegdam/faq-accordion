@@ -22,7 +22,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: var(--fs);
-    height: 100vh;
 }
 
 .header{
