@@ -110,18 +110,20 @@ span {
 
 @media only screen and (max-width: 1440px) {
 
-    body { 
-        height: 100vh;
+    body {
+        height: 100vh; 
     }
 
     .container {
         position: relative;
         display: flex;
         width: 350px;
-        height: 550px;
+        height: 475px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top:120px;
+        margin-bottom: 30px
     }
 
     .box{
@@ -136,7 +138,8 @@ span {
 
     .bg-pattern-mobile{
         position: absolute;
-        top: -5px;        
+        top: -5px;
+        transform: translateX(-50%);        
     }
     
     .wrapper-right {
