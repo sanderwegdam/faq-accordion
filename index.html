@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box"><img src="images/illustration-box-desktop.svg" /></div>
+    <div class="wrapper">
+      <picture class="woman-online-mobile">
+        <source media="(max-width:1440px)" srcset="images/illustration-woman-online-mobile.svg">
+        <img src="images/illustration-woman-online-desktop.svg" class="woman-online-desktop" style="width:auto;">
+      </picture>
+      <picture class="bg-pattern-mobile">
+        <source media="(max-width:1440px)" srcset="images/bg-pattern-mobile.svg">
+        <img src="images/bg-pattern-desktop.svg" class="bg-pattern-desktop" style="width:auto;">
+      </picture>
+      <div class="header">
+        <h1>FAQ</h1>
+      </div>
+      <div class="card item-1">
+
+        <div class="vraag">
+          <input type="checkbox" id="vraag1">
+          <label for="vraag1">
+            <p>How many team members can I invite?<span><img src="images/icon-arrow-down.svg" /></span></p>
+          </label>
+          <div class="antwoord">
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.</p>
+          </div>
+        </div>
+
+        <div class="border"></div>
+        <div class="vraag">
+          <input type="checkbox" id="vraag2">
+          <label for="vraag2">
+            <p>is the maximum file upload size?<span><img src="images/icon-arrow-down.svg" /></span></p>
+          </label>
+          <div class="antwoord">
+            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+        </div>
+
+        <div class="border"></div>
+        <div class="vraag">
+          <input type="checkbox" id="vraag3">
+          <label for="vraag3">
+            <p>How do I reset my password?<span><img src="images/icon-arrow-down.svg" /></span></p>
+          </label>
+          <div class="antwoord">
+            <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.</p>
+          </div>
+        </div>
+
+        <div class="border"></div>
+        <div class="vraag">
+          <input type="checkbox" id="vraag4">
+          <label for="vraag4">
+            <p>Can I cancel my subscription?<span><img src="images/icon-arrow-down.svg" /></span></p>
+          </label>
+          <div class="antwoord">
+            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+        </div>
+
+        <div class="border"></div>
+        <div class="vraag">
+          <input type="checkbox" id="vraag5">
+          <label for="vraag5">
+            <p>Do you provide additional support?<span><img src="images/icon-arrow-down.svg" /></span></p>
+          </label>
+          <div class="antwoord">
+            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+        </div>
+        <div class="border"></div>
+
+      </div>
+    </div>
+  </div>
+  <script src="click-effect.js"></script>
+</body>
+
+</html>

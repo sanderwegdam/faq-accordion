@@ -1,0 +1,247 @@
+:root {
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    --fs: 12px;
+
+}
+
+html {   
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs);
+}
+
+.header{
+    position: absolute;
+}
+
+
+h1{
+    font-size: 32px;
+    font-weight: 700;  
+}
+
+p {
+    font-family: 'Kumbh', sans-serif;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+.container {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+}
+
+.wrapper {    
+    display: flex;
+    background-color: white; 
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {   
+    height: 400px;
+    width: 300px;
+    padding: 50px;   
+}
+
+.item-1 {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: black;  
+}
+
+.vraag {   
+    text-align: left;
+}
+
+h1{
+    padding: 10px 0;
+}
+
+input {
+    display: none;
+}
+
+.border{
+    border-top: 1px solid var(--Light-grayish-blue); 
+}
+
+.antwoord {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .antwoord {
+    display: block;
+}
+
+input[type=checkbox]:checked ~ label p {
+    font-weight: 700;
+}
+
+input[type=checkbox]:checked ~ label img {
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+label {
+    transition: left 1s;
+    transition-timing-function: ease-in-out;
+}
+
+label p:hover{
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+
+span {
+    float: right;
+}
+
+@media only screen and (max-width: 1440px)
+{
+    .container {
+        display: flex;
+        flex-direction: column;    
+        width: 485px;
+        height: 1000px;
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        width: 375px;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .box{
+        display: none;
+    }
+
+    .woman-online-mobile{
+        position: absolute;
+        top:-108px;
+        left: 40px;
+    }
+
+    .bg-pattern-mobile{
+        position: absolute;
+        top: -5px;        
+    }
+    
+    .header{
+        text-align: center;
+        top: 100px;
+    }
+
+    .card {
+        margin-top: 150px;
+    }
+
+    .item-1 {
+        background-color: var(--bright-orange);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 1200px;    
+        height: 800px;    
+    }
+        
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    picture {
+        position: absolute;
+        left: -50px;
+    }
+
+    .box {
+        position: absolute;
+        left: 55px;
+        top: 360px;
+        z-index: 2;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .bg-pattern-desktop {
+        position: absolute;
+        width: 320px;
+        top: -540px;
+        left: -520px;    
+    }
+
+    .woman-online-desktop {
+        position: absolute;
+        width: 320px;
+        top: -175px;
+        left: -30px;
+        z-index: 1;
+    }
+
+    .header {
+        top: 50px;
+        left: 525px;
+    }
+
+    .card {
+        height: 450px;
+        width: 300px;
+        margin-left: 450px;
+        padding: 50px;        
+    }
+
+    .item-1 {
+        margin-top: 250px;
+        background-color: var(--bright-orange);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        color: black;
+    }
+
+    body:has(label:hover) .box {
+        left: 35px;
+        transition: 0.75s;
+        transition-timing-function: ease-in-out;
+    }
+
+}
+
