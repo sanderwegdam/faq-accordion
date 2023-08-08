@@ -17,13 +17,12 @@ html {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
+body {   
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: var(--fs);
+    height: 100vh;
 }
 
 .header{
@@ -130,7 +129,7 @@ span {
     .wrapper {
         position: relative;
         display: flex;
-        width: 375px;
+        width: 350px;
         flex-direction: column;
         height: 500px;
     }
