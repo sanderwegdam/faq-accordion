@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--fs);
+    font-size: var(--fs); 
 }
 
 .header{
@@ -121,7 +121,7 @@ span {
     .container {
         display: flex;
         flex-direction: column;    
-        width: 340px;
+        width: 350px;
         height: 1000px;
     }
 
