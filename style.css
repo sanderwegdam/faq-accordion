@@ -121,7 +121,7 @@ span {
     .container {
         display: flex;
         flex-direction: column;    
-        width: 350px;
+        width: 340px;
         height: 1000px;
     }
 
