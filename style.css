@@ -121,14 +121,14 @@ span {
     .container {
         display: flex;
         flex-direction: column;    
-        width: 350px;
+        width: 360px;
         height: 1000px;
     }
 
     .wrapper {
         position: relative;
         display: flex;
-        width: 330px;
+        width: 350px;
         flex-direction: column;
         height: 500px;
         margin: 0 auto;
