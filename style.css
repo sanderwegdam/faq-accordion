@@ -108,9 +108,7 @@ span {
 
 @media only screen and (max-width: 1440px) {
 
-    body {
-        height: 100vh; 
-    }
+ 
 
     .container {    
         position: relative;
