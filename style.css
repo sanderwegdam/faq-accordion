@@ -16,8 +16,7 @@
     box-sizing: border-box;
 }
 
-body {  
-    width: 100vw; 
+body { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +28,7 @@ body {
 
 h1{
     font-size: 32px;
-    font-weight: 700;  
+    font-weight: 700;
 }
 
 p {
@@ -38,7 +37,7 @@ p {
     line-height: 20px;
 }
 
-.container {    
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,14 +45,8 @@ p {
     border-radius: 30px;
 }
 
-.card {   
-    /* height: 400px;
-    width: 300px;
-    padding: 50px;    */
-}
-
 span {
-
+    float: right;
 }
 
 .item-1 {
@@ -61,11 +54,11 @@ span {
     color: black;  
 }
 
-.vraag {   
-    text-align: left;
+.vraag {
+    padding: 12px 0;
 }
 
-h1 {
+.antwoord {
     padding: 10px 0;
 }
 
@@ -108,13 +101,18 @@ span {
     float: right;
 }
 
+.item-1 {
+    background-color: var(--bright-orange);
+    color: black;
+}
+
 @media only screen and (max-width: 1440px) {
 
     body {
-        height: 100vh; 
+        
     }
 
-    .container {
+    .container {    
         position: relative;
         display: flex;
         width: 350px;
@@ -124,6 +122,11 @@ span {
         align-items: center;
         margin-top:120px;
         margin-bottom: 30px
+    }
+
+    h1{ 
+        text-align: center;
+        padding: 30px;
     }
 
     .box{
@@ -145,18 +148,9 @@ span {
     .wrapper-right {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-
-    .card {
-        /* margin-top: 150px; */
-    }
-
-    .item-1 {
-        background-color: var(--bright-orange);
-        color: black;
-    }
+        /* align-items: center; */
+        width: 305px;
+    }    
 }
 
 @media only screen and (min-width: 1440px){
@@ -165,58 +159,61 @@ span {
         height: 100vh;
     }
 
-    .container {
+    .box-wrapper {
         position: relative;
+        width: 900px;   
+        height: 520px;  
+    }
+
+    .container {
         display: flex;
         flex-direction: row;
         overflow: hidden;
-        width: 1200px;   
+        width: 900px;   
+        height: 520px;
     }
 
-    picture {
-        position: absolute;
-        left: -50px;
+    .wrapper-left {
+        width: 450px;
+        height: 520px;
     }
 
     .box {
         position: absolute;
-        left: 55px;
-        top: 360px;
-        z-index: 2;
-        transition: 0.5s;
+        top: 215px;
+        right: 800px;
+        z-index: 3;
+        transition: 0.3s;
         transition-timing-function: ease-in-out;
     }
 
     .bg-pattern-desktop {
-        position: absolute;
-        width: 320px;
-        top: -540px;
-        left: -520px;    
+        margin-top: -540px;
+        margin-left: -520px;    
     }
 
     .woman-online-desktop {
-        position: absolute;
-        width: 320px;
-        top: -175px;
-        left: -30px;
+        padding-top: 80px;
+        margin-left: -50px;
         z-index: 1;
     }
 
-    .card {
-        height: 450px;
-        width: 300px;
-        margin-left: 450px;
-        padding: 50px;        
+    h1{
+        text-align: left;
+        padding-bottom: 40px;
     }
 
-    .item-1 {
-        margin-top: 250px;
-        background-color: var(--bright-orange);
-        color: black;
+    .wrapper-right {
+        width: 450px;
+        padding: 50px 100px 50px 10px;
     }
+
+    .card{
+        margin-top: -10px;     
+    } 
 
     body:has(label:hover) .box {
-        left: 35px;
+        right: 815px;
         transition: 0.75s;
         transition-timing-function: ease-in-out;
     }
