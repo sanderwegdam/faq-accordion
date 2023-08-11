@@ -16,15 +16,19 @@
     box-sizing: border-box;
 }
 
-body { 
+html {
+    min-height: 100%;
+    background: linear-gradient(to bottom, var(--Soft-violet), var(--Soft-blue)); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: var(--fs);
-    font-family: 'Lexend Deca', sans-serif; 
-    background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
-    background-repeat: no-repeat;
-    background-size: 100vw 220%;
+    font-family: 'Kumbh sans', sans-serif;
 }
 
 h1{
@@ -33,7 +37,6 @@ h1{
 }
 
 p {
-    font-family: 'Kumbh', sans-serif;
     font-weight: 100;
     line-height: 20px;
 }
@@ -107,7 +110,7 @@ span {
     color: black;
 }
 
-@media only screen and (max-width: 1440px) {  
+@media only screen and (max-width: 1440px) {   
 
     .container {    
         position: relative;
@@ -133,14 +136,14 @@ span {
     .woman-online-mobile{
         position: absolute;
         top:-108px;
-        left: 40px;
+        transform: translateX(-56%);             
     }
 
     .bg-pattern-mobile{
         position: absolute;
         top: -5px;
         transform: translateX(-50%);        
-    }
+    }  
     
     .wrapper-right {
         display: flex;
