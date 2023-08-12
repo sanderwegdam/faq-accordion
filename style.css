@@ -10,15 +10,15 @@
 
 }
 
-* {   
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
 html {
-    min-height: 100%;
-    background: linear-gradient(to bottom, var(--Soft-violet), var(--Soft-blue)); 
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--Soft-violet), var(--Soft-blue));
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -31,7 +31,7 @@ body {
     font-family: 'Kumbh sans', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 32px;
     font-weight: 700;
 }
@@ -45,7 +45,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white; 
+    background-color: white;
     border-radius: 30px;
 }
 
@@ -55,7 +55,7 @@ span {
 
 .item-1 {
     background-color: var(--bright-orange);
-    color: black;  
+    color: black;
 }
 
 .vraag {
@@ -70,23 +70,23 @@ input {
     display: none;
 }
 
-.border{
-    border-top: 1px solid var(--Light-grayish-blue); 
+.border {
+    border-top: 1px solid var(--Light-grayish-blue);
 }
 
 .antwoord {
     display: none;
 }
 
-input[type=checkbox]:checked ~ .antwoord {
+input[type=checkbox]:checked~.antwoord {
     display: block;
 }
 
-input[type=checkbox]:checked ~ label p {
+input[type=checkbox]:checked~label p {
     font-weight: 700;
 }
 
-input[type=checkbox]:checked ~ label img {
+input[type=checkbox]:checked~label img {
     transform: rotate(180deg);
     transition-duration: 0.5s;
 }
@@ -96,7 +96,7 @@ label {
     transition-timing-function: ease-in-out;
 }
 
-label p:hover{
+label p:hover {
     color: var(--Soft-red);
     cursor: pointer;
 }
@@ -110,9 +110,9 @@ span {
     color: black;
 }
 
-@media only screen and (max-width: 1440px) {   
+@media only screen and (max-width: 1440px) {
 
-    .container {    
+    .container {
         position: relative;
         display: flex;
         width: 350px;
@@ -124,50 +124,50 @@ span {
         margin-bottom: 30px
     }
 
-    h1{ 
+    h1 {
         text-align: center;
         padding: 30px;
     }
 
-    .box{
+    .box {
         display: none;
     }
 
-    .woman-online-mobile{
+    .woman-online-mobile {
         position: absolute;
-        top:-108px;
-        transform: translateX(-55%);             
+        top: -108px;
+        transform: translateX(-55%);
     }
 
-    .bg-pattern-mobile{
+    .bg-pattern-mobile {
         position: absolute;
         top: -5px;
-        transform: translateX(-50%);        
-    }  
-    
+        transform: translateX(-50%);
+    }
+
     .wrapper-right {
         display: flex;
         flex-direction: column;
         /* align-items: center; */
         width: 305px;
-    }    
+    }
 }
 
-@media only screen and (min-width: 1440px){ 
+@media only screen and (min-width: 1440px) {
 
     .box-wrapper {
         position: relative;
-        width: 900px;   
-        height: 520px;  
+        width: 900px;
+        height: 520px;
     }
 
     .container {
         display: flex;
         flex-direction: row;
         overflow: hidden;
-        width: 900px;   
+        width: 900px;
         height: 520px;
-        margin-top: 200px;
+        margin-top: 80px;
     }
 
     .wrapper-left {
@@ -186,7 +186,7 @@ span {
 
     .bg-pattern-desktop {
         margin-top: -540px;
-        margin-left: -520px;    
+        margin-left: -520px;
     }
 
     .woman-online-desktop {
@@ -195,7 +195,7 @@ span {
         z-index: 1;
     }
 
-    h1{
+    h1 {
         text-align: left;
         padding-bottom: 40px;
     }
@@ -205,9 +205,9 @@ span {
         padding: 50px 100px 50px 10px;
     }
 
-    .card{
-        margin-top: -10px;     
-    } 
+    .card {
+        margin-top: -10px;
+    }
 
     body:has(label:hover) .box {
         right: 815px;
@@ -216,4 +216,3 @@ span {
     }
 
 }
-
