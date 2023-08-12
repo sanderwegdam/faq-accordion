@@ -181,7 +181,7 @@ span {
 
     .box {
         position: absolute;
-        top: 415px;
+        top: 295px;
         right: 800px;
         z-index: 3;
         transition: 0.3s;
@@ -189,13 +189,13 @@ span {
     }
 
     .bg-pattern-desktop {
-        margin-top: -540px;
-        margin-left: -520px;
+        margin-top: -740px;
+        margin-left: -580px;
     }
 
     .woman-online-desktop {
         padding-top: 80px;
-        margin-left: -50px;
+        margin-left: -80px;
         z-index: 1;
     }
 
@@ -214,7 +214,7 @@ span {
     }
 
     body:has(label:hover) .box {
-        right: 815px;
+        right: 840px;
         transition: 0.75s;
         transition-timing-function: ease-in-out;
     }
